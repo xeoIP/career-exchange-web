@@ -1,0 +1,298 @@
+.page--home .section.inverse~.section, .page--home .site-footer {
+  background: #f4f7f8
+}
+
+.page--home .section.inverse~.wave svg {
+  fill: #f4f7f8
+}
+
+.hero--home {
+  padding: 5.483em 0
+}
+
+.hero--home .container {
+  z-index: 2
+}
+
+.hero--home h1 .smaller {
+  display: block
+}
+
+@media (max-width:33em) {
+  .hero--home h1 {
+    font-size: calc(2em + 1vw);
+    margin-top: 1em
+  }
+  .hero--home h1 span {
+    display: block
+  }
+  .hero--home h1 .smaller {
+    font-size: .618em;
+    margin-top: .4rem
+  }
+}
+
+.hero--home .illo {
+  overflow: hidden;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1
+}
+
+.hero--home .illo svg {
+  flex: 0 0 auto;
+  height: 36em;
+  width: auto
+}
+
+@media (max-width:33em) {
+  .hero--home .illo svg {
+    height: 48em
+  }
+}
+
+@media (min-width:50em) {
+  .hero--home .illo svg {
+    height: 40em;
+    margin-left: -14.354em
+  }
+}
+
+@media (min-width:60em) {
+  .hero--home .illo svg {
+    margin-left: -11.089em
+  }
+}
+
+@media (min-width:72em) {
+  .hero--home .illo svg {
+    margin-left: 0
+  }
+}
+
+@media (min-width:4096px) {
+  .hero--home .illo {
+    top: 0;
+    bottom: auto
+  }
+  .hero--home .illo svg {
+    width: 100%;
+    height: auto
+  }
+}
+
+.hero--home+.section {
+  margin-top: 0
+}
+
+.hero--home+.section .container {
+  z-index: 2
+}
+
+.section--home-core {
+  background: linear-gradient(-180deg, #fff 10%, #f9fbfc 90%);
+  text-align: center
+}
+
+.section--home-core .grid {
+  counter-reset: step;
+  margin-bottom: -2.618em
+}
+
+@media (min-width:60em) {
+  .section--home-core .grid {
+    text-align: left
+  }
+}
+
+.section--home-core li {
+  counter-increment: step
+}
+
+.section--home-core h3 {
+  margin-top: 1em;
+  white-space: nowrap
+}
+
+.section--home-core h3::before {
+  display: inline-block;
+  content: counter(step);
+  background: rgba(14, 30, 37, .38);
+  color: #fff;
+  border-radius: 50%;
+  font-size: .618em;
+  width: 1.618em;
+  line-height: 1.618em;
+  text-align: center;
+  margin-right: .618em;
+  position: relative;
+  top: -.236em
+}
+
+.section--home-core svg {
+  max-width: 100%;
+  height: auto
+}
+
+@media(min-width:60em) {
+  .section--home-core svg {
+    width: 100%
+  }
+}
+
+.section--home-beyond {
+  background: #f9fbfc
+}
+
+.section--home-beyond h2 {
+  text-align: center
+}
+
+.section--home-beyond .grid {
+  max-width: 37.577em
+}
+
+.section--home-benefits .media {
+  flex-direction: column;
+  justify-content: flex-start
+}
+
+@media (min-width:60em) {
+  .section--home-benefits {
+    padding-bottom: 6.854em
+  }
+}
+
+.section--home-validation {
+  text-align: center
+}
+
+@media (min-width:60em) {
+  .section--home-validation {
+    padding-bottom: 4.236em
+  }
+}
+
+.section--home-validation .logos {
+  color: #0e1e25;
+  max-width: 46.971em;
+  margin: 2.618em auto 1em
+}
+
+.section--home-validation .logos svg {
+  margin: .618em;
+  vertical-align: middle
+}
+
+.section--home-validation .scrollable-wrapper {
+  overflow: hidden;
+  height: 11em;
+  margin-top: 2.618em
+}
+
+@media (min-width:60em) {
+  .section--home-validation .scrollable-wrapper {
+    margin-bottom: 1.618em
+  }
+}
+
+.section--home-validation .scrollable {
+  overflow: auto;
+  margin: 0;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row
+}
+
+.section--home-validation .card--tweet {
+  margin: 0 .5em;
+  max-width: 72vw
+}
+
+@media (max-width:30em) {
+  .section--home-validation .scrollable-wrapper {
+    height: 12em
+  }
+  .section--home-validation .scrollable-wrapper .card--tweet {
+    min-height: calc(12em - 40px)
+  }
+}
+
+@media (max-width:22.5em) {
+  .section--home-validation .scrollable-wrapper {
+    height: 13em
+  }
+  .section--home-validation .scrollable-wrapper .card--tweet {
+    min-height: calc(13em - 40px)
+  }
+}
+
+.card--tweet {
+  box-sizing: content-box;
+  width: 23.224em;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, .12)
+}
+
+.card--tweet a {
+  position: relative;
+  z-index: 1
+}
+
+.card--tweet cite {
+  margin-top: auto;
+  padding-top: 1.618em;
+  display: flex;
+  align-items: flex-end;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(14, 30, 37, .54)
+}
+
+.card--tweet cite a {
+  position: static;
+  color: inherit;
+  z-index: 0
+}
+
+.card--tweet cite a:hover {
+  color: #0e1e25;
+  text-decoration: none
+}
+
+.card--tweet cite a::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0
+}
+
+.card--tweet cite small {
+  display: block;
+  font-weight: 400;
+  opacity: .9
+}
+
+.card--tweet cite .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.3em;
+  height: 1.3em;
+  fill: rgba(14, 30, 37, .09)
+}
+
+.card--tweet cite .avatar {
+  border-radius: 50%;
+  margin-right: 1em;
+  overflow: hidden;
+  width: 3em;
+  height: 3em;
+  flex: 0 0 3em
+}
